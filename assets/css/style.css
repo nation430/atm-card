@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 100%;
+  width: 1000px;
+  height: 500px;
+  background: radial-gradient(
+    287.27% 239.07% at 93.26% 85.75%,
+    #513a23 3.65%,
+    #53483f 100%
+  );
+  display: flex;
+  margin: 5rem auto;
+  position: relative;
+}
+
+.first-circle {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  left: 80px;
+  top: 10px;
+  border-radius: 50%;
+  background: rgba(255, 184, 0, 0.8);
+}
+
+.second-circle {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  left: 666px;
+  top: 240px;
+  border-radius: 50%;
+  background: #ffcc4d;
+}
+
+.cards__single {
+  position: absolute;
+  width: 530px;
+  height: 320px;
+  left: 214px;
+  top: 95px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  transition: transform 0.6s;
+  perspective: 1000px;
+  background: radial-gradient(
+    117.2% 318.96% at 57.06% 56.56%,
+    #f46d0c 0%,
+    #ff7f14 0%,
+    #ff6b00 5.9%,
+    #f5ab41 54.11%,
+    #fe6d00 55.75%,
+    rgba(254, 109, 0, 0.970595) 58.33%,
+    rgba(244, 109, 12, 0.81) 59.58%,
+    rgba(244, 109, 12, 0.81) 91.51%
+  );
+  box-shadow: 2px 2px 0px #ffffff;
+  border-radius: 10px;
+}
+
+.cards__single.flip {
+  transform: rotateY(180deg);
+}
+
+.cards__front,
+.cards__back {
+  backface-visibility: hidden;
+}
+.cards__front {
+  height: 100%;
+  transform: rotateX(0deg);
+  position: relative;
+}
+
+.vector__img {
+  display: inline-block;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.card__details {
+  position: relative;
+  padding: 20px 47px 0px 47px;
+}
+.card__logo {
+  max-width: 100%;
+  width: 60px;
+  height: auto;
+}
+.card__name,
+.card__code {
+  font-size: 0.55rem;
+  font-weight: lighter;
+}
+
+.card__nameCode .card__code {
+  padding-left: 44px;
+}
+.card__nameCode {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: 34px;
+  font-family: "Roboto";
+}
+
+.smart__chip {
+  display: flex;
+  justify-content: space-between;
+}
+.card__chip {
+  position: relative;
+  top: -13px;
+}
+
+.card__numbers {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(58, 58, 58, 0.31);
+  text-shadow: 0px 0px 0px #000000;
+}
+
+.card__numbers span {
+  position: relative;
+  top: -24px;
+}
+.card__debit {
+  padding-left: 21px;
+  padding-bottom: 6px;
+}
+
+.card__sign {
+  width: 70px;
+  height: 45px;
+  background: #e0e0e0;
+  border-radius: 20px;
+}
+
+.card__pin {
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  text-shadow: 0px 0px 4px rgba(154, 154, 154, 0.89);
+}
+.card__pin span {
+  position: relative;
+  top: -15px;
+}
+.card__valid {
+  display: flex;
+  justify-content: center;
+  margin-top: -12px;
+}
+
+.card__valid span {
+  font-size: 12px;
+  color: #ffffff;
+  text-shadow: 0px 0px 4px rgba(154, 154, 154, 0.89);
+}
+
+.card__valid p {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.31);
+  text-shadow: 0px 0px 0px #000000;
+  padding-left: 1rem;
+}
+
+.card__down {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.card__downName h2 {
+  font-size: 20px;
+  text-transform: full-width;
+  color: rgba(58, 58, 58, 0.31);
+  text-shadow: 0px 0px 0px #000000;
+  line-height: 22px;
+  margin-top: 16px;
+}
+
+.card__downName p {
+  font-style: italic;
+  font-size: 10px;
+  line-height: 22px;
+  position: relative;
+  right: 30px;
+}
+
+.cards__back {
+  transform: rotateY(180deg);
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0px;
+  color: #20263f;
+  width: 530px;
+  height: 320px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.back-top {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 0.5rem;
+  align-content: center;
+  font-size: 0.55rem;
+}
+.backMain-top {
+  font-size: 0.66rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.black-panel {
+  width: 528px;
+  height: 50px;
+  background: #000;
+  margin-top: 1rem;
+}
+.gray__panel {
+  width: 390px;
+  height: 50px;
+  background: #eee;
+  margin-top: 0.55rem;
+}
+
+.back-main {
+  margin: 0rem 1rem;
+}
+.back__details {
+  font-size: 0.55rem;
+  padding-top: 0.55rem;
+}
+.back__details p {
+  padding-bottom: 0.55rem;
+}
+
+.first__footer {
+  display: flex;
+  padding-top: 0.55rem;
+  font-size: 0.55rem;
+}
+
+.card__contact {
+  padding-left: 0.55rem;
+  font-weight: 600;
+}
+.footer {
+  font-size: 0.55rem;
+  text-align: center;
+  padding-top: 0.55rem;
+}
+
+/* @media (min-width: 411px) {
+  .first-circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    top: 10px;
+  }
+
+  .second-circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 283px;
+    top: 300px;
+  }
+  .cards__single {
+    width: 340px;
+    height: 220px;
+    left: 45px;
+    top: 95px;
+  }
+
+  .cards__back {
+    width: 340px;
+    height: 220px;
+    left: 1px;
+    top: 0px;
+  }
+  .black-panel {
+    width: 338px;
+    height: 30px;
+  }
+
+  .gray__panel {
+    width: 270px;
+    height: 30px;
+  }
+
+  .card__logo {
+    max-width: 100%;
+    width: 40px;
+  }
+  .card__details {
+    position: relative;
+    padding: 20px 20px 0px 20px;
+  }
+
+  .card__sign {
+    width: 50px;
+    height: 29px;
+    background: #e0e0e0;
+    border-radius: 9px;
+  }
+
+  .card__numbers {
+    font-size: 14px;
+  }
+
+  .card__valid span {
+    font-size: 9px;
+  }
+  .card__valid p {
+    font-size: 16px;
+  }
+  .card__valid {
+    margin-top: -44px;
+  }
+  .card__downName h2 {
+    font-size: 15px;
+  }
+  .card__downName p {
+    font-size: 8px;
+    right: 11px;
+  }
+} */
